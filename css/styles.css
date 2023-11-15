@@ -27,11 +27,45 @@ ol {
   margin-left: 0;
 }
 
+img {
+  display: block;
+}
+
 .link,
 .logo-head,
 .logo-foot,
 .contacts-link {
   text-decoration: none;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Позиціонування хедера */
+.menushka {
+  display: flex;
+}
+.page-navigation {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.menu-list {
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
+}
+
+.address-list {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 332px;
 }
 
 /* Стилі хедера */
@@ -100,6 +134,19 @@ ol {
   background-color: #404bbf;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .feature-title {
   color: #2e2f42;
   font-size: 20px;
@@ -107,7 +154,19 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+.features {
+  display: flex;
+  gap: 24px;
+}
 
+.team-cards {
+  display: flex;
+  gap: 24px;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
 .teams {
   background-color: #f4f4fd;
 }
