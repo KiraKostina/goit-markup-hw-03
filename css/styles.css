@@ -47,25 +47,23 @@ img {
 }
 
 /* Позиціонування хедера */
-.menushka {
+.menu {
   display: flex;
 }
 .page-navigation {
   display: flex;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  align-items: center;
+  justify-content: space-between;
 }
 .menu-list {
   display: flex;
   margin-left: 76px;
-  gap: 40px;
+  column-gap: 40px;
 }
 
 .address-list {
   display: flex;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-left: 332px;
+  column-gap: 40px;
 }
 
 /* Стилі хедера */
