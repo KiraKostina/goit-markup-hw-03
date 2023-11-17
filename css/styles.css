@@ -60,6 +60,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .head-cover-span {
@@ -69,6 +70,7 @@ img {
 .link {
   color: #2e2f42;
   font-weight: 500;
+  padding: 24px 0;
 }
 
 .link:hover,
@@ -82,6 +84,7 @@ img {
   line-height: 1.5;
   font-style: normal;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -91,7 +94,6 @@ img {
 .menu {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc;
 }
 .page-navigation {
   display: flex;
@@ -100,20 +102,20 @@ img {
 .menu-list {
   display: flex;
   margin-left: 36px;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .address-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
-.menu-list-item,
-.address-list-item {
-  padding: 24px 0;
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
 }
 /* ==========HEADER STYLES========== */
 /* ==========MAIN STYLES========== */
+/* 1st section */
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
@@ -125,7 +127,7 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -148,11 +150,25 @@ img {
   margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 169px;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
+}
+
+/* 2nd section */
+.our-features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.features {
+  display: flex;
+  gap: 24px;
+}
+.features-list-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .visually-hidden {
@@ -174,25 +190,10 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-}
-.features {
-  display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  gap: 24px;
+  margin-bottom: 8px;
 }
 
-.team-cards {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}
+/* 3rd section */
 .teams {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -206,8 +207,15 @@ img {
   line-height: 1.11;
   text-transform: capitalize;
   letter-spacing: 0.02em;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
+
+.team-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
 .team-card {
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
@@ -222,24 +230,39 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .position {
   text-align: center;
 }
 
+.description-team {
+  padding: 32px 0;
+}
+/* 4th section */
 .portfolio {
   padding: 120px 0;
 }
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.project-card {
+  width: calc((100% - 48px) / 3);
+}
+
 .project-title {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-}
-.description-team {
-  padding: 32px 0;
+  margin-bottom: 8px;
 }
 .description-card {
   padding: 32px 16px;
@@ -247,13 +270,13 @@ img {
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
 }
+
 /* ==========MAIN STYLES========== */
 /* ==========FOOTER STYLES========== */
 
 .page-footer {
   background-color: #2e2f42;
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 .logo-foot {
   color: #4d5ae5;
