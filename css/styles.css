@@ -15,7 +15,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -101,7 +102,6 @@ img {
 }
 .menu-list {
   display: flex;
-  margin-left: 36px;
   gap: 40px;
 }
 
